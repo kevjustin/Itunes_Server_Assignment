@@ -1,0 +1,33 @@
+<!-- search.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/search.css">
+</head>
+
+<body>
+  <div class="links">
+      <a href="/guestHome">Home</a>
+      <a href="/search">Search</a>
+      <a href="/playlist">Playlist</a>
+      <a href="/logout">Logout</a>
+  </div>
+  <div class="searchDetails">
+      <h1>Song Search</h1>
+      <label for="songName">Song Name:</label>
+      <input type="text" id="songNameField" name="songNameField">
+      <input type="button" id="submit_song_button" value="Submit">
+      <div id="songTitle"></div>
+      <div id="songList"></div>
+  </div>
+
+  
+
+  <script src="routes/handle.js"></script>
+</body>
+
+</html>

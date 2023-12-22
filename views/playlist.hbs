@@ -1,0 +1,27 @@
+<!-- views/playlist.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/playlist.css">
+</head>
+
+<body>
+  <div class="links">
+    <a href="/guestHome">Home</a>
+    <a href="/search">Search</a>
+    <a href="/playlist">Playlist</a>
+    <a href="/logout">Logout</a>
+  </div>
+  <h1>Playlist</h1>
+
+  <ul>
+    {{#each tracks}}
+      <li>{{trackName}} - {{trackArtist}}</li>
+    {{/each}}
+  </ul>
+</body>
+</html>
